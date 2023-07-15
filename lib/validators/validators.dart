@@ -23,15 +23,10 @@ class Validators {
 
   static String? passwordValidator(password) {
     if (password == null) return "Password cannot be empty!";
-    // bool passValid =
-    //     RegExp(r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#\$&*~]).{6,}$')
-    //         .hasMatch(password);
     if (password.isEmpty) {
       return "Password cannot be empty!";
     }
-    //  else if (!passValid) {
-    //   return "Requirements missing!";
-    // }
+
     else if (password.length < 6) {
       return "Password must be greater than 6 characters!";
     }

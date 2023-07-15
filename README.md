@@ -79,3 +79,6 @@ shared_preferences:
    <img src="https://github.com/mo7amedaliEbaid/audio-bliss/blob/b262689ba345c375a8e147c9a4c8b1cf0b70774a/audiobliss_screenshots/close_app.png" width="120" />
    <img src="https://github.com/mo7amedaliEbaid/audio-bliss/blob/c81425c44c0615bc3d6aa5641ec48d77ec9189bf/audiobliss_screenshots/playing_light.png" width="120" />
 </p>
+
+## Video
+https://www.linkedin.com/posts/mo7amedebaid_flutter-animations-audio-activity-7085928388929945600-_xNa?utm_source=share&utm_medium=member_desktop

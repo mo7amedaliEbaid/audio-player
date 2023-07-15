@@ -1,7 +1,6 @@
 part of 'cubit.dart';
 
 class AuthDataProvider {
-//  static final firebaseFirestore = FirebaseFirestore.instance;
 
   static Future<User> login(String email, String password) async {
     try {

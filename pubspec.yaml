@@ -18,7 +18,6 @@ dependencies:
 
   cupertino_icons: ^1.0.2
   #ui
-  flutter_svg:
   font_awesome_flutter:
   flutter_spinkit:
   lottie:
@@ -26,9 +25,6 @@ dependencies:
   # firebase
   firebase_core:
   firebase_auth:
-
-
-  # social login
   google_sign_in:
 
 

@@ -103,18 +103,3 @@ class GmailLoginFailed extends AuthState {
   const GmailLoginFailed({String? message}) : super(message: message);
 }
 
-// fb social login
-@immutable
-class FBLoginLoading extends AuthState {
-  const FBLoginLoading() : super();
-}
-
-@immutable
-class FBLoginSuccess extends AuthState {
-  const FBLoginSuccess({User? data}) : super(data: data);
-}
-
-@immutable
-class FBLoginFailed extends AuthState {
-  const FBLoginFailed({String? message}) : super(message: message);
-}

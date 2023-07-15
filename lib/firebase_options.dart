@@ -58,7 +58,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '645970464567',
     projectId: 'todo-firestore-d6bd0',
   //  databaseURL: 'https://easy-chat-84b64-default-rtdb.europe-west1.firebasedatabase.app/',
-    storageBucket: 'todo-firestore-d6bd0.appspot.com',
+  //  storageBucket: 'todo-firestore-d6bd0.appspot.com',
   );
 
 }

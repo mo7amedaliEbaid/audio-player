@@ -53,24 +53,6 @@ class SignUpScreen extends StatelessWidget {
               ),
               Space.yf(4),
               Space.y!,
-              BlocConsumer<AuthCubit, AuthState>(
-                listener: (context, state) {
-                  if (state is FBLoginFailed) {
-                    CustomSnackBars.failure(context, state.message!);
-                  } else if (state is FBLoginSuccess) {
-                    CustomSnackBars.success(context, 'Facebook login success!');
-                    Navigator.pushNamed(context, '/dashboard');
-                  }
-                },
-                builder: (context, state) {
-                  if (state is FBLoginLoading) {
-                    return const LinearProgressIndicator(
-                      color: Color(0xff4267B2),
-                    );
-                  }
-                  return Container();
-                },
-              ),
               Space.y2!,
               BlocConsumer<AuthCubit, AuthState>(
                 listener: (context, state) {
