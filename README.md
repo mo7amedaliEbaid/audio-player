@@ -35,9 +35,6 @@ lottie:
 #### firebase
 firebase_core:      
 firebase_auth:      
-
-
-#### social login
 google_sign_in:     
 
 
