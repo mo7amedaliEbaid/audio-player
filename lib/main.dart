@@ -1,21 +1,20 @@
 
+import 'package:audio_bless/providers/app_provider.dart';
+import 'package:audio_bless/providers/bottom_provider.dart';
+import 'package:audio_bless/providers/song_provider.dart';
+import 'package:audio_bless/screens/dashboard/dashboard.dart';
+import 'package:audio_bless/screens/forgot_password/forgot_password_screen.dart';
+import 'package:audio_bless/screens/login/login_screen.dart';
+import 'package:audio_bless/screens/playing_now/playing_now_screen.dart';
+import 'package:audio_bless/screens/profile/profile_screen.dart';
+import 'package:audio_bless/screens/signup/signup_screen.dart';
+import 'package:audio_bless/screens/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/adapters.dart';
-import 'package:permission_handler/permission_handler.dart';
 import 'package:provider/provider.dart';
-import 'package:todo_firestore/providers/app_provider.dart';
-import 'package:todo_firestore/providers/bottom_provider.dart';
-import 'package:todo_firestore/providers/song_provider.dart';
-import 'package:todo_firestore/screens/dashboard/dashboard.dart';
-import 'package:todo_firestore/screens/forgot_password/forgot_password_screen.dart';
-import 'package:todo_firestore/screens/login/login_screen.dart';
-import 'package:todo_firestore/screens/playing_now/playing_now_screen.dart';
-import 'package:todo_firestore/screens/profile/profile_screen.dart';
-import 'package:todo_firestore/screens/signup/signup_screen.dart';
-import 'package:todo_firestore/screens/splash_screen.dart';
 import 'configs/core_theme.dart' as theme;
 import 'cubits/auth/cubit.dart';
 import 'firebase_options.dart';
@@ -24,6 +23,10 @@ import 'models/song/song.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );

@@ -59,6 +59,7 @@ class CustomTextFieldState extends State<CustomTextField> {
     return SizedBox(
       width: AppDimensions.normalize(250),
       child: TextFormField(
+        onTapOutside: (event)=>FocusScope.of(context).unfocus(),
         enabled: widget.enabled ?? true,
         initialValue: widget.initialValue,
         controller: widget.controller,
