@@ -8,7 +8,7 @@ Audio Bliss is an audio " MP3 " player built in flutter, It asks for permission 
 
 ## State Management
 
-✔️ Provider && Bloc pattern <br />
+✔️ Provider && Bloc <br />
 
 ## Features and Components
 
