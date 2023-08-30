@@ -2,9 +2,7 @@
 
 Audio Bliss is an audio " MP3 " player built in flutter, It asks for permission to access internal storage and once it is allowed you can play any mp3 file from your internal storage in this app.
 
-## Architechture
 
-✔️ Clean Architechture <br />
 
 ## State Management
 
