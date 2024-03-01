@@ -45,7 +45,9 @@ class _PlayingNowScreenState extends State<PlayingNowScreen> {
                 children: [
                   Expanded(
                     child: Text(
-                      '${basename(songProvider.current!).substring(0, 20)}...',
+                      songProvider.current!.isEmpty||songProvider.current == null
+                          ? ""
+                          : '${basename(songProvider.current!).substring(0, 8)}...',
                       style: AppText.h1b,
                     ),
                   ),
